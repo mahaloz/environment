@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install git -y
 RUN git clone https://github.com/mahaloz/environment.git && \
     ./environment/install_commons.sh 
-RUN (cd environment && ./install_configs.sh)
+RUN cd environment && ./install_configs.sh
 
 # fixup gdb config 
 RUN sed -i 's/\\u27a4 />/g' ~/.gdbinit-gef.py && \
