@@ -20,9 +20,3 @@ apt-get install -y \
     python3-pip \
     ipython3 
 
-# install configs
-./configs/bash/install.sh
-./configs/tmux/install.sh
-./configs/vim/install.sh
-./configs/gdb/install.sh 
-
