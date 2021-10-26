@@ -12,7 +12,9 @@ apt-get install -y \
     netcat \
     net-tools \
     wget \
+    curl \
     build-essential \
+    vim \
     gdb \
     ltrace \
     strace \

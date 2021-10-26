@@ -1,5 +1,5 @@
 # MACOS ONLY 
-if [[ "$OSTYPE" == "darwin"* ]]; then
+if [ "$OSTYPE" == "darwin"* ]; then
     brew install xclip
 else
     apt-get install xclip -y
