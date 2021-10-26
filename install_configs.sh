@@ -1,4 +1,4 @@
-./configs/bash/install.sh 
-./configs/tmux/install.sh
-./configs/gdb/install.sh 
-./configs/vim/install.sh
+(cd ./configs/bash/ && ./install.sh)
+(cd ./configs/tmux/ && ./install.sh)
+(cd ./configs/gdb/ && ./install.sh)
+(cd ./configs/vim/ && ./install.sh)
