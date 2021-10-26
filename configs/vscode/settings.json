@@ -1,0 +1,28 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.minimap.enabled": false,
+    "terminal.integrated.localEchoStyle": "underlined",
+    "terminal.integrated.fontFamily": "Roboto Mono Medium for Powerline",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "prettier.tabWidth": 4,
+    "C_Cpp.updateChannel": "Insiders",
+    "security.workspace.trust.untrustedFiles": "open",
+    "cSpell.userWords": [
+        "decompilation"
+    ],
+    "git.autofetch": true
+}

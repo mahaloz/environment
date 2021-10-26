@@ -1,0 +1,37 @@
+format = """
+[┌─────────────────────────](bold white)
+[│](bold white)$python$git_branch$username@$hostname: $directory
+[└─$character](bold white)"""
+
+[character]
+error_symbol = " [∅](bold red)"
+success_symbol = " [λ](bold white)"
+
+[directory]
+format = "[$path]($style)"
+truncate_to_repo = false
+truncation_length = 5
+style = "bold green"
+
+[git_branch]
+format = "[\\[$symbol$branch\\]]($style) "
+symbol = "∋ "
+style = "bold yellow"
+
+[hostname]
+ssh_only = false
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold blue"
+disabled = false
+
+[username]
+style_user = "blue bold"
+style_root = "red bold"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+
+[python]
+format = "([\\($virtualenv\\)]($style)) "
