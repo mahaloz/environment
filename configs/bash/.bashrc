@@ -96,7 +96,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     export PATH="/usr/local/bin:$PATH"
     export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
     export CLICOLORS=1
-
+    export BASH_SILENCE_DEPRECATION_WARNING=1
 # WINDOWS ONLY ADDITIONS 
 elif [[ "$OSTYPE" == "cygwin" ]]; then
     alias ls="gls --color" 
@@ -112,9 +112,3 @@ then
 else
     eval "$(starship init bash)"
 fi 
-
-# Configuration for virtualenv
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-source /usr/local/bin/virtualenvwrapper.sh

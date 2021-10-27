@@ -20,5 +20,7 @@ apt-get install -y \
     strace \
     python3 \
     python3-pip \
-    ipython3 
+    ipython3 \
+    tmux
 
+python3 -m pip install sortedcontainers ipdb
