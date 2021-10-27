@@ -78,6 +78,7 @@ fi
 # ======================================================== #
 
 # useful alias
+alias tmux='tmux -u' 
 export PYTHONBREAKPOINT=ipdb.set_trace
 
 # vim mode
