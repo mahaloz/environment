@@ -1,6 +1,6 @@
 format = """
 [┌─────────────────────────](bold white)
-[│](bold white)$python$git_branch$username@$hostname: $directory
+[│](bold white) $python$git_branch$username@$hostname: $directory
 [└─$character](bold white)"""
 
 [character]
@@ -10,7 +10,7 @@ success_symbol = " [λ](bold white)"
 [directory]
 format = "[$path]($style)"
 truncate_to_repo = false
-truncation_length = 5
+truncation_length = 7
 style = "bold green"
 
 [git_branch]
@@ -21,8 +21,8 @@ style = "bold yellow"
 [hostname]
 ssh_only = false
 format = "<[$hostname]($style)>"
-trim_at = "-"
-style = "bold blue"
+trim_at = "."
+style = "bold green"
 disabled = false
 
 [username]

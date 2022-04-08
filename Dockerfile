@@ -7,8 +7,8 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install git -y
 
-COPY . ./environment
-#RUN git clone https://github.com/mahaloz/environment.git
+#COPY . ./environment
+RUN git clone https://github.com/mahaloz/environment.git
 RUN (cd ./environment && ./install_commons.sh) 
 RUN (cd ./environment && ./install_configs.sh) 
 
