@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=bluebubbles
+Exec=/home/mahaloz/bin/bluebubbles/bluebubbles_app
+Icon=/home/mahaloz/bin/bluebubbles/data/flutter_assets/assets/icon/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;
+Comment=imessage
+MimeType=x-scheme-handler/bluebubbles;text/html;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=angr
+Exec=/home/mahaloz/bin/angr-management
+Icon=/home/mahaloz/github/angr-dev/angr-management/angrmanagement/resources/images/angr.png
+Terminal=false
+Type=Application
+Categories=Utility;
+Comment=angr-management decompiler

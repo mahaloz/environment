@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=binaryninja
+Exec=/home/mahaloz/ctf/tools/binja/binaryninja/binaryninja %u
+MimeType=application/x-binaryninja;x-scheme-handler/binaryninja;
+Icon=/home/mahaloz/ctf/tools/binja/binaryninja/docs/img/logo.png
+Terminal=false
+Type=Application
+Categories=Utility;
+Comment=Binary Ninja: A Reverse Engineering Platform

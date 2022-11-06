@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ida32
+Exec=/home/mahaloz/bin/ida %u
+Icon=/home/mahaloz/ctf/tools/ida/idapro-8.0/appico.png
+Terminal=false
+Type=Application
+Categories=Utility;
+Comment=IDA Pro reversing software

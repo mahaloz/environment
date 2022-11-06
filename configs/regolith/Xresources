@@ -1,0 +1,35 @@
+!regolith.wallpaper.file: /home/mahaloz/Pictures/planet.png 
+regolith.wallpaper.file: /home/mahaloz/Pictures/cyber.jpg
+regolith.lockscreen.wallpaper.file: /home/mahaloz/Pictures/cyber.jpg
+
+i3-wm.gaps.inner.size: 10
+i3-wm.gaps.outer.size: 6
+
+! Gives the nice fonts and saves it so that the machine will not change
+! the config if you refresh the same theme. 
+gtk.monospace_font_name: RobotoMono Nerd Font 12
+gtk.font_name: RobotoMono Nerd Font 10
+gnome.terminal.font: Ubuntu Mono 12
+gnome.terminal.update: false
+
+! This sets up the custom transparent bar at the top of the window manager.
+! If you want transaprency, you need to place the line:
+! i3bar_command i3bar --transparency
+!
+! Inside the 'bar{}' config in file /usr/share/regolith/i3/config.d/70_bar, or whatever
+! is responsible for rendering the bar in your i3 instance 
+i3xrocks.action.volume.left: gnome-control-center sound --class=floating_window
+i3-wm.bar.position: top 
+
+i3-wm.bar.background.color: #1D1F21e0
+i3-wm.bar.separator.color: #1D1F21e0
+i3-wm.bar.statusline.color: #1D1F21e0
+i3-wm.bar.workspace.inactive.background.color: #1D1F21e0
+i3-wm.bar.workspace.inactive.border.color: #1D1F21e0
+i3-wm.bar.workspace.active.background.color: #1D1F21e0
+i3-wm.bar.workspace.active.border.color: #1D1F21e0
+
+i3-wm.bar.workspace.focused.background.color: #424242f0
+i3-wm.bar.workspace.focused.border.color: #424242f0
+
+regolith.look.path: /usr/share/regolith-look/nord
