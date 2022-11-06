@@ -79,6 +79,8 @@ fi
 
 # useful alias
 alias tmux='tmux -u' 
+alias ipython=ipython3
+alias bat=batcat
 export PYTHONBREAKPOINT=ipdb.set_trace
 
 # vim mode
@@ -86,9 +88,6 @@ set -o vi
 
 # fix colors in terminal
 export TERM=xterm-256color
-
-# custom scripts
-export PATH="/Users/mahaloz/launch_scripts:$PATH" 
 
 # MACOS ONLY ADDITIONS
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -112,4 +111,43 @@ then
     source ~/.bashrc
 else
     eval "$(starship init bash)"
+fi 
+
+
+#
+# Extras 
+#
+
+alias python=python3
+
+# docker
+export PATH=/usr/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
+# headless decompilers
+export GHIDRA_PATH=/home/mahaloz/ctf/tools/ghidra/support/analyzeHeadless 
+export IDA_PATH=/home/mahaloz/ctf/tools/ida/idapro-8.0/idat64
+
+if [ "$USER" != "root" ]; then
+    # virtual env
+    export WORKON_HOME=~/.virtualenvs
+    VIRTUALENVWRAPPER_PYTHON='python3'
+    source /home/mahaloz/.local/bin/virtualenvwrapper.sh
+
+    # joern
+    export PATH="$HOME/bin/joern-cli:$PATH"
+
+    
+    # ruby 
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+    export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+    
+    # java
+    source /etc/profile.d/gradle.sh
+    
+    # wasm
+    export PATH="/opt/wabt-1.0.29/bin:$PATH"
+    
+    . "$HOME/.cargo/env"
 fi 
