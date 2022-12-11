@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ghidra
 Exec=/home/mahaloz/ctf/tools/ghidra/ghidraRun
-Icon=/home/mahaloz/ctf/tools/ghidra/ghidra.png
+Icon=/home/mahaloz/ctf/tools/ghidra/docs/GhidraClass/Intermediate/Images/GhidraLogo64.png
 Terminal=false
 Type=Application
 Categories=Utility;
