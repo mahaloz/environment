@@ -8,9 +8,6 @@ cp cyber.jpg ~/Pictures/cyber.jpg
 # make the the top bar look better
 sudo apt remove i3xrocks-app-launcher i3xrocks-net-traffic i3xrocks-info i3xrocks-next-workspace
 
-# add full unicode support
-sudo apt install fonts-noto
-
 # terminal colors
 sudo apt-get install dconf-cli uuid-runtime -y
 bash -c "$(wget -qO- https://git.io/vQgMr)"
