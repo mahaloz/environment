@@ -21,6 +21,7 @@ sudo apt-get install -y \
     python3 \
     python3-pip \
     ipython3 \
-    tmux
+    tmux \
+    fonts-noto
 
 python3 -m pip install sortedcontainers ipdb
