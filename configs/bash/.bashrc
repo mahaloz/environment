@@ -128,26 +128,31 @@ export DOCKER_HOST=unix:///run/user/1000/docker.sock
 export GHIDRA_PATH=/home/mahaloz/ctf/tools/ghidra/support/analyzeHeadless 
 export IDA_PATH=/home/mahaloz/ctf/tools/ida/idapro-8.0/idat64
 
+# python scripts (on some ubuntu systems)
+export PATH="$HOME/.local/bin:$PATH"
+
+# TODO: you must edit this when you install it for the right packages being sourced
 if [ "$USER" != "root" ]; then
     # virtual env
     export WORKON_HOME=~/.virtualenvs
     VIRTUALENVWRAPPER_PYTHON='python3'
-    source /home/mahaloz/.local/bin/virtualenvwrapper.sh
+    #source /home/mahaloz/.local/bin/virtualenvwrapper.sh
 
     # joern
     export PATH="$HOME/bin/joern-cli:$PATH"
 
     
     # ruby 
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    eval "$(rbenv init -)"
-    export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+    #export PATH="$HOME/.rbenv/bin:$PATH"
+    #eval "$(rbenv init -)"
+    #export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
     
     # java
-    source /etc/profile.d/gradle.sh
+    #source /etc/profile.d/gradle.sh
     
     # wasm
     export PATH="/opt/wabt-1.0.29/bin:$PATH"
     
-    . "$HOME/.cargo/env"
+    #. "$HOME/.cargo/env"
 fi 
+

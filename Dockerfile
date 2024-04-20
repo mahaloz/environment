@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 ubuntu:22.04
+FROM --platform=linux/amd64 ubuntu:jammy
 
 # ===================================== #
 # mahaloz config stuff                  #                     
@@ -11,6 +11,7 @@ RUN apt-get update && \
         libtool \
         g++ \
         gcc \
+        clang \
         sshfs \
         coreutils \
         binutils \
@@ -63,6 +64,9 @@ RUN wget https://starship.rs/install.sh -O /tmp/install.sh && \
     cp github/environment/configs/tmux/.tmux.conf ~/ && \
     mkdir .config && \
     cp github/environment/configs/bash/starship.toml .config/
+    
+RUN git config --global user.email "mahaloz@mahaloz.re" && \
+    git config --global user.name "mahaloz"
 
 # fixup gdb config 
 #RUN sed -i 's/\\u27a4 />/g' ~/.gdbinit-gef.py && \
