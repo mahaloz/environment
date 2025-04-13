@@ -63,7 +63,8 @@ RUN wget https://starship.rs/install.sh -O /tmp/install.sh && \
     cp github/environment/configs/bash/.bashrc ~/ && \
     cp github/environment/configs/tmux/.tmux.conf ~/ && \
     mkdir .config && \
-    cp github/environment/configs/bash/starship.toml .config/
+    cp github/environment/configs/bash/starship.toml .config/ && \
+    echo "done!"
     
 RUN git config --global user.email "mahaloz@mahaloz.re" && \
     git config --global user.name "mahaloz"
